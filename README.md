@@ -38,6 +38,7 @@ Now we need to install Nodejs. Type the following:
 ```
 $ sudo apt-get update
 $ sudo apt-get install nodejs
+$ sudo apt-get install -y npm
 ```
 
 Note: the $ does not need to be copied from here just everything after it.
@@ -76,11 +77,13 @@ Start in the terminal and follow these steps:
 
 Step 1: Clone the repository `$ git clone https://github.com/MagicMirrorOrg/MagicMirror`
 
-```
-$ git clone https://github.com/MagicMirrorOrg/MagicMirror
-$ cd MagicMirror
-$ npm run install-mm
-```
+Step 2: Change Directory to MagicMirror `$ cd MagicMirror`
+
+Step 3: Install the application `$ npm run install-mm`
+
+Step 4: To populate MagicMirror with some basics copy the sample to the main `cp config/config.js.sample config/config.js`
+
+When you want to run this program now or in the future type `npm run start` when in the MagicMirror directory.
 
 
 
