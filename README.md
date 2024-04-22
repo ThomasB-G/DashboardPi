@@ -1,7 +1,7 @@
 # DashboardPi
 My MagicMirror Dashboard Project
 
-## Setup:
+## Setup
 
 First step is connecting your micro USB to a computer and going to [RaspBerry Pi OS](https://www.raspberrypi.com/software/) to download the Raspberry Pi OS.
 
@@ -216,9 +216,51 @@ Use that secret link for your calendar and put in the username and password.
 
 Make sure to name the Calendar as well because future modules that want calendar information can take just the name instead of filling out all that info again.
 
+## Weather
 
+The end result for this section will hopefully look like this:
 
+```
+{
+			module: "weather",
+			position: "top_right",
+			config: {
+				fade: false,
+				weatherProvider: "openweathermap",
+				type: "current",
+				location: "your location",
+				locationID: "yourlocationID", 
+				apiKey: "yourapikey"
+			}
+		},
+		{
+			module: "weather",
+			position: "top_right",
+			header: "Weather Forecast",
+			config: {
+				fade: false,
+				weatherProvider: "openweathermap",
+				type: "forecast",
+				location: "your location",
+				locationID: "yourlocationID",
+				apiKey: "yourapikey"
+			}
+		},
+```
 
+First thing's first is you need to travel to [Open Weather Map](https://openweathermap.org/) and create an account.
+
+Once you have one navigate to your account's API keys. To do this simply click on your name at the top of the home screen and a drop down will appear with "My API Key's" as one option.
+
+![Weather API key](/process-for-github/Screenshotopenweather.png)
+
+Take your API key and put it in to both weather modules and you are good to go here.
+
+Then comes the annoying part. You have to find your location ID in this big json file: [OpenWeather Locations](http://bulk.openweathermap.org/sample/city.list.json.gz)
+
+Extract the file and I recommend you open it with wordpad instead of notepad. Wordpad handles the large file better than notepad which took a while to load for me.
+
+Search the file and once you've found your location ID just slap it in to both weather sections and you are good on this section.. 
 
 
 
