@@ -99,6 +99,8 @@ For my use case I'll be adding the following:
 
 [MMM-CalendarExt3](https://github.com/MMRIZE/MMM-CalendarExt3), This will allow me to create a two week calendar on the screen in addition to the list provided by MagicMirror.
 
+[MMM-Wallpaper](https://github.com/kolbyjack/MMM-Wallpaper), This will allow me to add a background image or images instead of a solid color.
+
 To start this process we need to change our directory in the terminal. Do this by typing `$ cd` which will take you home, then type `$ MagicMirror` and finally `$ modules`. Or a faster method is simply typing `$ cd ~/MagicMirror/modules` from home.
 
 Next we clone the git project, here are the ones I'll be using:
@@ -108,6 +110,7 @@ $ git clone https://github.com/Fifteen15Studios/MMM-AutoDimmer.git
 $ git clone https://github.com/sheyabernstein/MMM-connection-status
 $ git clone https://github.com/ianperrin/MMM-ModuleScheduler.git
 $ git clone https://github.com/MMRIZE/MMM-CalendarExt3
+$ git clone https://github.com/kolbyjack/MMM-Wallpaper.git
 ```
 
 Now we have to go into each individual module. From home that looks like `$ cd ~/MagicMirror/modules/MMM-AutoDimmer` or from modules you simply type `$ cd MMM-CalendarExt3` for example.
@@ -115,6 +118,62 @@ Now we have to go into each individual module. From home that looks like `$ cd ~
 This next part needs to be repeated for every module or they won't work. Once inside the module type `$ npm install`.
 
 If any vulnerabilities pop up then type `$ npm audit fix`, if there are still vulnerabilities you may need to type `$ npm audit fix --force` but after that everything should be working.
+
+## Starting Configuration
+
+The next step for me involves utilizing TigerVNC to open up the Pi's desktop and then navigating through files to MagicMirror and then configuration. In this folder you'll find config.js.
+
+![config folder](/process-for-github/Screenshotconfigfolder.png)
+
+I've opened it in the native IDE Geany but if you have your own downloaded you can use that as well.
+
+![Geany](/process-for-github/Screenshotgeany.png)
+
+I'm starting by deleting the alert, compliments, and notification modules. I don't want them for my dashboard but you can do whatever you want with them.
+
+Now we can run the program and see what we are dealing with.
+
+![Base MagicMirror](/process-for-github/Screenshotbase.png)
+
+Pretty ugly, also I'll be using a vertical screen but that's easily altered through the Pi's screen preferences.
+
+Also due to the size of the screen I'll be using I'll need to change the size of the fonts. That happens in our custom.css file in the css folder found in the MagicMirror folder.
+
+![CSS Folder](/process-for-github/Screenshotcssfolder.png)
+
+In the CSS file I'll be adding this code:
+
+```
+.xsmall {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.small {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.medium {
+  font-size: 80px;
+  line-height: 95px;
+}
+
+.large {
+  font-size: 110px;
+  line-height: 125px;
+}
+
+.xlarge {
+  font-size: 140px;
+  line-height: 160px;
+  letter-spacing: -6px;
+}
+```
+
+It's important that the code is placed outside of the root. 
+
+The reason we are working inside the custom.css file is that this is where we add code that will override anything from the various modules or the main.css file. Keep all of your changes here.
 
 
 
