@@ -33,4 +33,17 @@ Open up PuTTY and put in the IP address.
 
 A terminal will appear, type in your username and password that you set up in the settings when flashing the image of the Raspberry Pi OS.
 
-Once that is done we can get started.
+Now we need to install Nodejs. Type the following:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install nodejs
+```
+
+
+
+
+
+
+
+
