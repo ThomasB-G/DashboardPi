@@ -13,7 +13,7 @@ Choose your device, OS, and storage then hit next.
 
 ![screenshot of interlude](/process-for-github/Screenshot-2024-04-22-095138.png)
 
-From here we want to edit the settings. I used
+From here we want to edit the settings. I used dashboardpi for the hostname since I want it to be easy to find later on.
 
 ![screenshot of settings](/process-for-github/Screenshot-2024-04-22-095559.png)
 
@@ -25,4 +25,12 @@ I use [Advanced IP Scanner](https://www.advanced-ip-scanner.com/) which is a fre
 
 ![IP Scanner](/process-for-github/ScreenshotIPScanner.png)
 
-Hit Scan and search
+Hit Scan and search, this is where the host name dashboardpi comes in handy. When the scan finishes just find it and right click it to copy the IP address.
+
+Open up PuTTY and put in the IP address.
+
+![PuTTY](/process-for-github/ScreenshotPuTTY.png)
+
+A terminal will appear, type in your username and password that you set up in the settings when flashing the image of the Raspberry Pi OS.
+
+Once that is done we can get started.
