@@ -81,12 +81,27 @@ Step 2: Change Directory to MagicMirror `$ cd MagicMirror`
 
 Step 3: Install the application `$ npm run install-mm`
 
-Step 4: To populate MagicMirror with some basics copy the sample to the main `cp config/config.js.sample config/config.js`
+Step 4: To populate MagicMirror with some basics copy the sample to the main `$ cp config/config.js.sample config/config.js`
 
-When you want to run this program now or in the future type `npm run start` when in the MagicMirror directory.
+When you want to run this program now or in the future type `$ npm run start` when in the MagicMirror directory.
 
+## Modules
 
+Now that the basics are installed we are going to install any extra Modules that we want.
 
+For my use case I'll be adding the following:
+
+[MMM-AutoDimmer](https://github.com/Fifteen15Studios/MMM-AutoDimmer), This will dim the screen at night and brighten it back up in the morning.
+
+[MMM-connection-status](https://github.com/sheyabernstein/MMM-connection-status), This will show a simple message at the top of the screen letting me know if the internet is working or not.
+
+[MMM-ModuleScheduler](https://github.com/ianperrin/MMM-ModuleScheduler), This will allow me to hide other modules if I want to at specific times.
+
+[MMM-CalendarExt3](https://github.com/MMRIZE/MMM-CalendarExt3), This will allow me to create a two week calendar on the screen in addition to the list provided by MagicMirror.
+
+[](),
+[](),
+[](),
 
 
 
