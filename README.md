@@ -288,6 +288,67 @@ When you're done with this section it should look something like this:
 },
 ```
 
+Make sure this comes after the calendar module so that this will work correctly.
+
+## MMM-Wallpaper
+
+This section is pretty simple and should look like this:
+
+```
+{
+	module: "MMM-Wallpaper",
+	position: "fullscreen_below",
+	config: { // See "Configuration options" for more information.
+		source: "bing",
+		slideInterval: 3600 * 1000 // Change slides every hour, minute would be 60 * 1000, and ten minutes would be 600 * 1000
+		updateInterval: 12 * 3600 * 1000 // Checks for new slides every 12 hours
+	}
+}
+```
+
+## MMM-AutoDimmer
+
+This section should look like this:
+
+```
+{
+	module: 'MMM-AutoDimmer',
+	position: 'fullscreen_above',
+	header: '',
+	// Don't change anything above this line
+	config: {
+		schedules: [{
+			// Will dim completely from 11pm-3am every day
+			maxDim: 1,
+			dimTime: 2300,
+			brightTime: 300
+			// defaults are used for values that are not explicitly set
+		}
+					
+		] 
+	}
+}
+```
+
+## MMM-connection-status
+
+```
+{
+	module: 'MMM-connection-status',
+	header: "Internet Connection",
+	position: 'top_bar', // Or any valid MagicMirror position.
+	config: {
+		updateInterval: 60 * 1000, //every minute
+		initialLoadDelay: 0, //time to wait before starting
+		animationSpeed: 250, //animation speed
+		connectedColor: '#228B22', //forest green
+		disconnectedColor: '#8B0000' //Red
+	}
+},
+```
+
+
+
 
 
 
