@@ -175,6 +175,49 @@ It's important that the code is placed outside of the root.
 
 The reason we are working inside the custom.css file is that this is where we add code that will override anything from the various modules or the main.css file. Keep all of your changes here.
 
+## Google Calendar
+
+Now we work on changing the calendar to our google Calendar. 
+
+Quick tip is to never forget your comma's when editing as that is the most common mistake that will kill your program followed by remembering parenthesis and brackets.
+
+By the end of this part our Calendar section should look something like this:
+
+```
+config: {
+	calendars: [
+		{
+			url: 'https://www.calendarlabs.com/templates/ical/US-Holidays.ics',
+			symbol: 'calendar',
+      name: 'CalendarName',
+			auth: {
+			    user: 'username',
+			    pass: 'superstrongpassword',
+			    method: 'basic'
+			}
+		},
+	],
+}
+```
+
+To start open up you're google calendar.
+
+![Google Calendar](/process-for-github/Screenshotgooglecal.png)
+
+Then open up settings.
+
+![Google Settings](/process-for-github/Screenshotgooglesettings.png)
+
+Navigate to the Calendar you want to show and scroll down until you see the secret iCal link.
+
+![iCal Location](/process-for-github/Screenshotical.png)
+
+Use that secret link for your calendar and put in the username and password. 
+
+Make sure to name the Calendar as well because future modules that want calendar information can take just the name instead of filling out all that info again.
+
+
+
 
 
 
