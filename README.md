@@ -260,9 +260,33 @@ Then comes the annoying part. You have to find your location ID in this big json
 
 Extract the file and I recommend you open it with wordpad instead of notepad. Wordpad handles the large file better than notepad which took a while to load for me.
 
-Search the file and once you've found your location ID just slap it in to both weather sections and you are good on this section.. 
+Search the file and once you've found your location ID just slap it in to both weather sections and you are good on this section.
 
+## MMM-CalendarExt3
 
+When you're done with this section it should look something like this:
+
+```
+{
+	module: "MMM-CalendarExt3",
+	position: "lower_third",
+	title: "Bob and Betty's Calendar",
+	config: {
+		mode: "week",
+		weekIndex: 0,
+		weeksInView: 2,
+		fontSize: '40px',
+		eventHeight: '50px',
+		useMarquee: true,
+		instanceId: "basicCalendar",
+		locale: 'en-US',
+		maxEventLines: 5,
+		firstDayOfWeek: 7,
+		calendarSet: ['calendar'],
+		    
+	}
+},
+```
 
 
 
