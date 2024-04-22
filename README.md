@@ -40,6 +40,28 @@ $ sudo apt-get update
 $ sudo apt-get install nodejs
 ```
 
+Note: the $ does not need to be copied from here just everything after it.
+
+When the option appears type yes and hit enter.
+
+The last step will be setting up VNC so we can manipulate the desktop of our Pi from our computer if we need to.
+
+Start by downloading [TigerVNC](https://tigervnc.org/).
+
+Next type in:
+
+```
+$ sudo raspi-config
+```
+
+This is what should popup in your terminal:
+
+![ConfigScreen](/process-for-github/ScreenshotConfig.png)
+
+
+
+
+
 
 
 
