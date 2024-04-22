@@ -332,6 +332,8 @@ This section should look like this:
 
 ## MMM-connection-status
 
+For this section the code should look something like this:
+
 ```
 {
 	module: 'MMM-connection-status',
