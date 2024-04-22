@@ -99,9 +99,27 @@ For my use case I'll be adding the following:
 
 [MMM-CalendarExt3](https://github.com/MMRIZE/MMM-CalendarExt3), This will allow me to create a two week calendar on the screen in addition to the list provided by MagicMirror.
 
-[](),
-[](),
-[](),
+To start this process we need to change our directory in the terminal. Do this by typing `$ cd` which will take you home, then type `$ MagicMirror` and finally `$ modules`. Or a faster method is simply typing `$ cd ~/MagicMirror/modules` from home.
+
+Next we clone the git project, here are the ones I'll be using:
+
+```
+$ git clone https://github.com/Fifteen15Studios/MMM-AutoDimmer.git
+$ git clone https://github.com/sheyabernstein/MMM-connection-status
+$ git clone https://github.com/ianperrin/MMM-ModuleScheduler.git
+$ git clone https://github.com/MMRIZE/MMM-CalendarExt3
+```
+
+Now we have to go into each individual module. From home that looks like `$ cd ~/MagicMirror/modules/MMM-AutoDimmer` or from modules you simply type `$ cd MMM-CalendarExt3` for example.
+
+This next part needs to be repeated for every module or they won't work. Once inside the module type `$ npm install`.
+
+If any vulnerabilities pop up then type `$ npm audit fix`, if there are still vulnerabilities you may need to type `$ npm audit fix --force` but after that everything should be working.
+
+
+
+
+
 
 
 
