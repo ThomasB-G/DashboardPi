@@ -349,8 +349,9 @@ For this section the code should look something like this:
 },
 ```
 
+## Custom CSS
 
-
+My custom css file can be found [here](/custom.css)
 
 
 
