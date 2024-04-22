@@ -270,7 +270,7 @@ When you're done with this section it should look something like this:
 {
 	module: "MMM-CalendarExt3",
 	position: "lower_third",
-	title: "Bob and Betty's Calendar",
+	title: "Calendar",
 	config: {
 		mode: "week",
 		weekIndex: 0,
