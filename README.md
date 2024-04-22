@@ -58,10 +58,29 @@ This is what should popup in your terminal:
 
 ![ConfigScreen](/process-for-github/ScreenshotConfig.png)
 
+Navigate to interface, then VNC, and enable it. Wait a moment and when its finished exit the config screen.
 
+Now open Tiger VNC:
 
+![VNCScreen](/process-for-github/ScreenshotVNC.png)
 
+Enter your username and password to ensure that it works.
 
+Once you're finished you can close TigerVNC since we won't need it for now.
+
+## MagicMirror
+
+Now we are done with setup and ready for setup haha.
+
+Start in the terminal and follow these steps:
+
+Step 1: Clone the repository `$ git clone https://github.com/MagicMirrorOrg/MagicMirror`
+
+```
+$ git clone https://github.com/MagicMirrorOrg/MagicMirror
+$ cd MagicMirror
+$ npm run install-mm
+```
 
 
 
