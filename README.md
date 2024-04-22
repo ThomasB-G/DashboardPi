@@ -7,4 +7,4 @@ First step is connecting your micro usb to a computer and going to [RaspBerry Pi
 
 Second step is opening the imager.
 
-![screenshot of imager](/process_for_github/Screenshot_2024-04-22_092748.png)
+![screenshot of imager](/'process for github'/'Screenshot 2024-04-22 092748.png')
