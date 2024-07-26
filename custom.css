@@ -1,0 +1,115 @@
+/* Custom CSS Sample
+ *
+ * Change color and fonts here.
+ *
+ * Beware that properties cannot be unitless, so for example write '--gap-body: 0px;' instead of just '--gap-body: 0;'
+ */
+
+/* Uncomment and adjust accordingly if you want to import another font from the google-fonts-api: */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap'); */
+
+:root {
+  --color-text: #FEBE10;
+  --color-text-dimmed: #FEBE10;
+  --color-text-bright: #FEBE10;
+  --color-background: green;
+
+  --font-primary: "Roboto Condensed";
+  --font-secondary: "Roboto";
+
+  --font-size: 50px;
+  --font-size-small: 0.75rem;
+
+  --gap-body-top: 60px;
+  --gap-body-right: 60px;
+  --gap-body-bottom: 60px;
+  --gap-body-left: 60px;
+
+  --gap-modules: 30px;
+}
+
+.xsmall {
+  font-size: 60px;
+  line-height: 65px;
+}
+
+.small {
+  font-size: 80px;
+  line-height: 90px;
+}
+
+.medium {
+  font-size: 100px;
+  line-height: 115px;
+}
+
+.large {
+  font-size: 110px;
+  line-height: 125px;
+}
+
+.module.calendar {
+  background-color:rgba(0,0,0,0.6);
+  border-radius:8px;
+  padding:8px;
+}
+
+.module.clock {
+  background-color:rgba(0,0,0,0.6);
+  border-radius:8px;
+  padding:8px;
+}
+
+.module.weather {
+  background-color:rgba(0,0,0,0.6);
+  border-radius:8px;
+  padding:8px;
+}
+
+.module.newsfeed {
+  background-color:rgba(0,0,0,0.6);
+  border-radius:8px;
+  padding:8px;
+}
+
+.CX3 {
+  --defaultcolor: #FEBE10;
+  --cellbgcolor: rgb(0 0 0 / 60%);
+}
+
+.CX3 .cell.today {
+  border: 2px solid #FEBE10;
+}
+
+.CX3 .thisMonth {
+  background-color: rgb(0 0 0 / 60%);
+}
+
+.CX3 .weekend {
+  color: #FEBE10;
+  font-weight: bold;
+}
+
+.CX3 .weekend_2 {
+  color: #FEBE10;
+}
+
+.CX3 .weekend_1 {
+  color: #FEBE10;
+}
+
+.CX3 .cw {
+  font-size: 0%;
+  color: goldenrod;
+  margin-right: 5px;
+}
+
+.CX3 .today .cellDate {
+  color: goldenrod;
+  background-color: black;
+}
+
+.CX3 .event.singleday .headline:not(.useSymbol)::before,
+.CX3 .event.singleday .headline.useSymbol .symbol.noSymbol::before {
+  font-size: 25%;
+}
