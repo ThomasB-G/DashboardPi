@@ -1,0 +1,4 @@
+@reboot sleep 300 && pm2 start mm.sh
+
+0 3,8,11,16,20 * * * pm2 restart mm.sh
+
